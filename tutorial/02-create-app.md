@@ -410,16 +410,17 @@
         initialRouteName: 'AuthLoading'
       }
     ));
+    ```
 
-1. Save all of your changes.
+1. すべての変更を保存します。
 
-1. Reload the application in your emulator.
+1. エミュレーターにアプリケーションを再読み込みします。
 
-The app's menu should work to navigate between the two fragments and change when you tap the **Sign in** or **Sign out** buttons.
+アプリのメニューは、2つのフラグメント間を移動し、[**サインイン**] または [**サインアウト**] ボタンをタップすると、変更されます。
 
-![Screenshots of the application on Android](./images/android-app-screens.png)
+![Android 上のアプリケーションのスクリーンショット](./images/android-app-screens.png)
 
-![Screenshots of the application on iOS](./images/ios-app-screens.png)
+![IOS 上のアプリケーションのスクリーンショット](./images/ios-app-screens.png)
 
 > [!NOTE]
-> You may receive warnings when running the app about Async Storage or componentWillUpdate. For the purposes of this tutorial, you can dismiss those warnings.
+> アプリケーションを非同期ストレージまたはコンポーネントの更新に関して実行するときに、警告が表示される場合があります。 このチュートリアルの目的のために、これらの警告を閉じることができます。
