@@ -2,17 +2,16 @@
 
 最初に、新しい反応するネイティブプロジェクトを作成します。
 
-1. プロジェクトを作成するディレクトリで、コマンドラインインターフェイス (CLI) を開きます。 次のコマンドを実行して、[対応するネイティブな cli](https://github.com/facebook/react-native)ツールをインストールし、新しい反応するネイティブプロジェクトを作成します。
+1. プロジェクトを作成するディレクトリで、コマンドラインインターフェイス (CLI) を開きます。 次のコマンドを実行して、[ネイティブ cli](https://github.com/facebook/react-native)ツールを実行し、新しい反応するネイティブプロジェクトを作成します。
 
     ```Shell
-    npm install -g react-native-cli
-    react-native init GraphTutorial
+    npx react-native init GraphTutorial
     ```
 
 1. **省略可能:** プロジェクトを実行して、開発環境が正しく構成されていることを確認します。 CLI で、作成したばかりの**Graphtutorial**ディレクトリにディレクトリを変更し、次のいずれかのコマンドを実行します。
 
-    - IOS の場合:`react-native run-ios`
-    - Android の場合: Android エミュレーターのインスタンスを起動し、を実行します。`react-native run-android`
+    - IOS の場合:`npx react-native run-ios`
+    - Android の場合: Android エミュレーターのインスタンスを起動し、を実行します。`npx react-native run-android`
 
 ## <a name="install-dependencies"></a>依存関係のインストール
 
@@ -29,10 +28,9 @@
 1. 次のコマンドを実行します。
 
     ```Shell
-    npm install react-navigation@3.11.1 react-native-gesture-handler@1.3.0 react-native-reanimated@1.1.0
-    npm install react-native-elements@1.1.0 react-native-vector-icons@6.6.0 moment@2.24.0
-    npm install react-native-app-auth@4.4.0 @microsoft/microsoft-graph-client@1.7.0
-    react-native link react-native-vector-icons
+    npm install react-navigation@3.11.1 react-native-gesture-handler@1.5.2 react-native-reanimated@1.4.0
+    npm install react-native-elements@1.2.7 react-native-vector-icons@6.6.0 moment@2.24.0
+    npm install react-native-app-auth@4.4.0 @microsoft/microsoft-graph-client@2.0.0
     ```
 
 ### <a name="link-and-configure-dependencies-for-ios"></a>IOS の依存関係をリンクおよび構成する
@@ -45,6 +43,29 @@
 
     ```Shell
     pod install
+    ```
+
+1. テキストエディターで**Graphtutorial/ios/graphtutorial/情報**ファイルを開きます。 ファイルの最終`</dict>`行の直前に次の行を追加します。
+
+    ```xml
+    <key>UIAppFonts</key>
+    <array>
+      <string>AntDesign.ttf</string>
+      <string>Entypo.ttf</string>
+      <string>EvilIcons.ttf</string>
+      <string>Feather.ttf</string>
+      <string>FontAwesome.ttf</string>
+      <string>FontAwesome5_Brands.ttf</string>
+      <string>FontAwesome5_Regular.ttf</string>
+      <string>FontAwesome5_Solid.ttf</string>
+      <string>Foundation.ttf</string>
+      <string>Ionicons.ttf</string>
+      <string>MaterialIcons.ttf</string>
+      <string>MaterialCommunityIcons.ttf</string>
+      <string>SimpleLineIcons.ttf</string>
+      <string>Octicons.ttf</string>
+      <string>Zocial.ttf</string>
+    </array>
     ```
 
 1. テキストエディターで、 **graphtutorial/ios/GraphTutorial/AppDelegate. .h**ファイルを開きます。 その内容を次のように置き換えます。
@@ -76,7 +97,7 @@
     ]
     ```
 
-1. ファイルを保存します。 この`defaultConfig`エントリは、次のようになります。
+    この`defaultConfig`エントリは、次のようになります。
 
     ```Gradle
     defaultConfig {
@@ -90,6 +111,14 @@
         ]
     }
     ```
+
+1. ファイルの末尾に次の行を追加します。
+
+    ```Gradle
+    apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+    ```
+
+1. ファイルを保存します。
 
 ## <a name="design-the-app"></a>アプリを設計する
 
@@ -355,6 +384,9 @@
       }
     });
     ```
+
+1. **Graphtutorial**の「 **images**」という名前の新しいディレクトリを作成します。
+1. このディレクトリに**no-profile-pic**という名前の既定のプロファイルイメージを追加します。 好みのイメージを使用することも、[このサンプルの](https://github.com/microsoftgraph/msgraph-training-react-native/blob/master/demos/01-create-app/GraphTutorial/images/no-profile-pic.png)イメージを使用することもできます。
 
 1. **Graphtutorial/app.config**ファイルを開き、内容全体を次のように置き換えます。
 
