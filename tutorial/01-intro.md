@@ -14,13 +14,18 @@
   - [Xcode](https://developer.apple.com/xcode/) (iOS でサンプルを実行するために必要)
 - [Node.js](https://nodejs.org)
 
+また、Outlook.com 上のメールボックスを持つ個人の Microsoft アカウント、または Microsoft 職場または学校のアカウントを所有している必要があります。 Microsoft アカウントを持っていない場合は、無料のアカウントを取得するためのオプションがいくつかあります。
+
+- [新しい個人用 Microsoft アカウントにサインアップ](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)することができます。
+- [Office 365 開発者プログラムにサインアップ](https://developer.microsoft.com/office/dev-program)して、無料の office 365 サブスクリプションを取得することができます。
+
 > [!NOTE]
-> このチュートリアルは、対応するネイティブ CLI を使用して記述されています。これは、オペレーティングシステムとターゲットプラットフォームによって固有の前提条件を備えています。 開発用コンピューターを構成する方法については、「基本的な操作を[開始](https://facebook.github.io/react-native/docs/getting-started)する」を参照してください。 このチュートリアルで使用されているバージョンを以下に示します。 このガイドの手順は、他のバージョンでは動作しますが、テストされていません。
+> このチュートリアルは、対応するネイティブ CLI を使用して記述されています。これは、オペレーティングシステムとターゲットプラットフォームによって固有の前提条件を備えています。 開発用コンピューターを構成する方法については、「基本的な操作を[開始](https://reactnative.dev/docs/environment-setup)する」を参照してください。 このチュートリアルで使用されているバージョンを以下に示します。 このガイドの手順は、他のバージョンでは動作しますが、テストされていません。
 >
-> - Android Studio バージョン 3.4.2 with 1.8.0 JRE および Android 9.0 SDK
+> - Android Studio バージョン 3.6.2 with Android 9.0 SDK
 > - Java 開発キットバージョン12.0.2
-> - Xcode version 10.3
-> - Node.js バージョン10.16.0
+> - Xcode version 11.4
+> - Node.js バージョン12.16.2
 
 ## <a name="feedback"></a>フィードバック
 
