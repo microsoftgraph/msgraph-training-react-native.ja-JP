@@ -10,7 +10,7 @@
 このチュートリアルを開始する前に、開発用のコンピューターに次のものがインストールされている必要があります。
 
 - 次のうち少なくとも1つ。
-  - [Android Studio](https://developer.android.com/studio/) **および** [Java 開発キット](https://jdk.java.net)(android でサンプルを実行するために必要)
+  - [Android Studio](https://developer.android.com/studio/) **および** [Java 開発キット](https://jdk.java.net) (android でサンプルを実行するために必要)
   - [Xcode](https://developer.apple.com/xcode/) (iOS でサンプルを実行するために必要)
 - [Node.js](https://nodejs.org)
 
@@ -20,12 +20,12 @@
 - [Office 365 開発者プログラムにサインアップ](https://developer.microsoft.com/office/dev-program)して、無料の office 365 サブスクリプションを取得することができます。
 
 > [!NOTE]
-> このチュートリアルは、対応するネイティブ CLI を使用して記述されています。これは、オペレーティングシステムとターゲットプラットフォームによって固有の前提条件を備えています。 開発用コンピューターを構成する方法については、「基本的な操作を[開始](https://reactnative.dev/docs/environment-setup)する」を参照してください。 このチュートリアルで使用されているバージョンを以下に示します。 このガイドの手順は、他のバージョンでは動作しますが、テストされていません。
+> このチュートリアルは、対応するネイティブ CLI を使用して記述されています。これは、オペレーティングシステムとターゲットプラットフォームによって固有の前提条件を備えています。 開発用コンピューターを構成する方法については、「基本的な操作を [開始](https://reactnative.dev/docs/environment-setup) する」を参照してください。 このチュートリアルで使用されているバージョンを以下に示します。 このガイドの手順は、他のバージョンでは動作しますが、テストされていません。
 >
-> - Android Studio バージョン 3.6.2 with Android 9.0 SDK
+> - Android Studio バージョン4.1 と Android 9.0 SDK
 > - Java 開発キットバージョン12.0.2
-> - Xcode version 11.4
-> - Node.js バージョン12.16.2
+> - Xcode version 12.1
+> - Node.js バージョン14.15.0
 
 ## <a name="feedback"></a>フィードバック
 
