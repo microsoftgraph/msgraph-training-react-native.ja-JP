@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-この手順では、Azure Active Directory 管理センターを使用して、新しい Azure AD ネイティブアプリケーションを作成します。
+この演習では、Azure Active Directory 管理センターを使用してAD Azure アプリケーションを作成します。
 
-1. ブラウザーを開き、[Azure Active Directory 管理センター](https://aad.portal.azure.com)へ移動して、**個人用アカウント** (別名: Microsoft アカウント)、または**職場/学校アカウント**を使用してログインします。
+1. ブラウザーを開き、[Azure Active Directory 管理センター](https://aad.portal.azure.com)へ移動して、**個人用アカウント** (別名: Microsoft アカウント)、または **職場/学校アカウント** を使用してログインします。
 
-1. 左側のナビゲーションで [ **Azure Active Directory** ] を選択し、[**管理**] の下にある [**アプリの登録**] を選択します。
+1. 左側のナビゲーションで **[Azure Active Directory]** を選択し、それから **[管理]** で **[アプリの登録]** を選択します。
 
     ![アプリの登録のスクリーンショット ](./images/aad-portal-app-registrations.png)
 
@@ -12,14 +12,10 @@
 
     - `React Native Graph Tutorial` に **[名前]** を設定します。
     - **[サポートされているアカウントの種類]** を **[任意の組織のディレクトリ内のアカウントと個人用の Microsoft アカウント]** に設定します。
-    - [**リダイレクト URI**] で、ドロップダウンを [**パブリッククライアント (モバイル & デスクトップ)**] に変更し`graph-tutorial://react-native-auth`、値をに設定します。
+    - [ **リダイレクト URI] で**、ドロップダウンをパブリック クライアント (モバイル & **デスクトップ)** に変更し、値を次に設定します `graph-tutorial://react-native-auth/` 。
 
-    ![[アプリケーションの登録] ページのスクリーンショット](./images/aad-register-an-app.png)
+    ![[アプリケーションを登録する] ページのスクリーンショット](./images/aad-register-an-app.png)
 
-1. [**登録**] を選択します。 [**ネイティブグラフの応答] チュートリアル**ページで、**アプリケーション (クライアント) ID**の値をコピーして保存します。そのためには、次の手順を実行する必要があります。
+1. **[登録]** を選択します。 React Native **Graph チュートリアル** ページで、アプリケーション **(クライアント) ID** の値をコピーして保存します。次の手順で必要になります。
 
-    ![新しいアプリの登録のアプリケーション ID のスクリーンショット](./images/aad-application-id.png)
-
-1. [**管理**] で、[**認証**] を選択します。 [**リダイレクト uri** ] ページで、uri `urn:ietf:wg:oauth:2.0:oob`を使用して、**パブリッククライアント (モバイル & デスクトップ)** 型の別のリダイレクト URI を追加します。 [**保存**] を選択します。
-
-    ![リダイレクト Uri ページのスクリーンショット](./images/aad-redirect-uris.png)
+    ![新しいアプリ登録のアプリケーション ID のスクリーンショット](./images/aad-application-id.png)
